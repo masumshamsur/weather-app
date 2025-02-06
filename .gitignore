@@ -1,0 +1,42 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.env
+
+# Dependency files
+*.log
+pip-log.txt
+
+# IDE & Editor settings
+.vscode/
+*.swp
+
+# Flask cache & database
+instance/
+*.sqlite3
+
+# Docker-related files
+dist/
+build/
+*.tar
+Dockerfile
+
+# Ignore environment config files
+.env
+config.json
+
+# Ignore static and temporary files
+static/tmp/
+
+# Ignore compiled files
+*.pyc
+*.pyo
+
+# Ignore deployment files
+deploy/
+
+# Ignore images directory
+

@@ -1,0 +1,32 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+.env
+
+# Ignore log files
+*.log
+
+# Ignore Docker-related files
+.dockerignore
+Dockerfile
+
+# Ignore dependency directories
+dist/
+build/
+*.tar
+
+# Ignore static cache/static tmp
+static/tmp/
+
+# Ignore deployment and image folders
+deploy/
+imgs/
+
+# Ignore SQLite database
+*.sqlite3
+
+# Ignore IDE settings
+.vscode/
