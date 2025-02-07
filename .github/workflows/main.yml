@@ -63,3 +63,13 @@ jobs:
             # Debugging: Verify the updated Deployment.yaml
             - name: Show Updated Manifest
               run: cat deploy/deploy.yaml   
+
+            # update the image tag in deply.yaml file in github  
+            - name: Commit the updated manifest
+              run: |
+                git config --global user.email "masumqahelp@gmail.com"
+                git config --global user.name "github-actions"
+                git add deploy/deploy.yaml
+                git commit -m "updated deploy.yaml with new image version- ${{ env.VERSION }}" || echo "No changes to commit"
+                git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
+                
