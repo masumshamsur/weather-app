@@ -36,7 +36,6 @@ static/tmp/
 *.pyo
 
 # Ignore deployment files
-deploy/
 
 # Ignore images directory
 
