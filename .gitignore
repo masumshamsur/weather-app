@@ -22,7 +22,7 @@ instance/
 dist/
 build/
 *.tar
-Dockerfile
+
 
 # Ignore environment config files
 .env
