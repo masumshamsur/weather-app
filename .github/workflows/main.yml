@@ -55,4 +55,11 @@ jobs:
               run: |
                 docker push ${{ secrets.DOCKER_USERNAME }}/weather-app:${{ env.VERSION }}  
 
+            # Update Kubernetes manifest with the new image tag
+            - name: Update Kubernetes Manifest
+              run: |
+               sed -i 's|image: masum012924/weather-app:.*|image: masum012924/weather-app:${{ env.VERSION }}|' deploy/Deployment.yaml
 
+            # Debugging: Verify the updated Deployment.yaml
+            - name: Show Updated Manifest
+              run: cat Deployment.yaml    
