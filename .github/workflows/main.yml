@@ -58,7 +58,7 @@ jobs:
             # Update Kubernetes manifest with the new image tag
             - name: Update Kubernetes Manifest
               run: |
-               sed -i 's|image: masum012924/weather-app:.*|image: masum012924/weather-app:${{ env.VERSION }}|' deploy/Deployment.yaml
+               sed -i 's|image: masum012924/weather-app:.*|image: masum012924/weather-app:${{ env.VERSION }}|' deploy/deploy.yaml
 
             # Debugging: Verify the updated Deployment.yaml
             - name: Show Updated Manifest
