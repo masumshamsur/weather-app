@@ -62,4 +62,4 @@ jobs:
 
             # Debugging: Verify the updated Deployment.yaml
             - name: Show Updated Manifest
-              run: cat Deployment.yaml    
+              run: cat deploy/deploy.yaml   
