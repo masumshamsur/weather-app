@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #6a7883, #2a3636);
+    background: linear-gradient(to right, #86e0e8, #4fbebe);
     color: #382020;
     text-align: center;
     margin: 0;
@@ -18,7 +18,7 @@ body {
     background: rgba(255, 255, 255, 0.2);
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(181, 238, 245, 0.2);
     width: 350px;
     text-align: center;
 }
